@@ -5,6 +5,6 @@ class Person:
       self.assets = assets
       self.current_account = current_account
 
-list_people = []
+
 
    

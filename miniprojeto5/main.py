@@ -1,9 +1,9 @@
 
-from person import Person
-from functions import receive_person_data
-from functions import show_person_data
+from pessoa import Pessoa
+import functions
+import indices
 def main(): 
- people = []
+ pessoas = []
  opcao = False
  while opcao == False:
         
@@ -14,15 +14,19 @@ def main():
         opcao = input("")
 
         if opcao == "D" or opcao == "d":
-            receive_person_data()
-            opcao = True
+            functions.digitar_dados_pessoa(pessoas)
+            opcao = False
             
 
         elif opcao == "M" or opcao == "m":
-            show_person_data(input("digite aqui o nome da pessoa"))
-            opcao = True
-            print("mostrando pessoas")
-        
+            functions.mostrar_dados_pessoa(Pessoa)
+            opcao = False
+            #como fazer a entrada ser oq ele espera?
+            
+        elif opcao == "I" or opcao =="i":
+            function.simular_mes_população(pessoas,indices.taxa_mensal_rendimento,indices.gastos)
+            opcao = False
+    
         elif opcao == "S" or opcao =="s":
             opcao = True
             print("encerrando...")
@@ -33,7 +37,7 @@ def main():
             
 if __name__ == "__main__":
         main()
-#criar um dicionário com os gastos minimos e necessarios(que serão tuplas) associados a chaves que serão as áreas
+
 
 
 

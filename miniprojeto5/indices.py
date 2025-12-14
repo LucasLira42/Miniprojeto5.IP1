@@ -1,9 +1,9 @@
-monthly_ratereturn = 0.005
+taxa_mensal_rendimento = 0.005
 
-monthly_expenses = {
+gastos = {
     "moradia": (650, 0.3),
-    "alimentação": (450, 0.25),
+    "alimentacao": (450, 0.25),
     "transporte": (250, 0.15),
-    "educação": (0, 0.1),
-    "saúde": (0, 0.1)
+    "educacao": (0, 0.1),
+    "saude": (0, 0.1)
           }
